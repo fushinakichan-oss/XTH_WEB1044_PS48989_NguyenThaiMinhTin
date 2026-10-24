@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm - TTGSHOP</title>
+    <!-- Liên kết CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detail.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER & NAVBAR -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../images/LOGO TTGSHOP.png" alt="TTGSHOP Logo">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+            </ul>
+
+            <div class="nav-right-actions">
+                <a href="cart.html" class="cart-icon-wrapper">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn-login">Đăng nhập</a>
+                    <a href="register.html" class="btn-register">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT - CHI TIẾT SẢN PHẨM -->
+    <div class="main-container" style="padding: 30px 15px;">
+        <!-- Nút quay lại trang danh sách -->
+        <div class="back-link-wrapper" style="margin-bottom: 20px;">
+            <a href="products.html" class="btn btn-secondary" style="text-decoration: none; padding: 8px 15px; background: #e2e8f0; color: #334155; border-radius: 4px; display: inline-block;">
+                <i class="fa-solid fa-arrow-left"></i> Quay lại danh sách sản phẩm
+            </a>
+        </div>
+
+        <!-- KHUNG CHỨA NỘI DUNG CHI TIẾT (BẮT BUỘC PHẢI CÓ ID NÀY) -->
+        <div id="product-detail-container">
+            <!-- Dữ liệu chi tiết sẽ được nhúng tự động vào đây bằng JavaScript -->
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="main-container footer-grid">
+            <div class="footer-col">
+                <h3>TTGSHOP</h3>
+                <p>Chuyên cung cấp PC Gaming, Laptop, linh kiện máy tính chất lượng cao cho sinh viên và game thủ chuyên nghiệp.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fa-solid fa-location-dot"></i> TP. Hồ Chí Minh, Việt Nam</p>
+                <p><i class="fa-solid fa-phone"></i> Hotline: 0909 123 456</p>
+                <p><i class="fa-solid fa-envelope"></i> Email: contact@ttgshop.vn</p>
+            </div>
+            <div class="footer-col">
+                <h4>Chính sách cửa hàng</h4>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành 1 đổi 1</a></li>
+                    <li><a href="#">Chính sách giao hàng toàn quốc</a></li>
+                    <li><a href="#">Hướng dẫn thanh toán & trả góp</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Mạng xã hội</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            © 2026 TTGSHOP. All rights reserved. Designed for Web Assignment.
+        </div>
+    </footer>
+
+    <!-- Đảm bảo đường dẫn đúng thư mục chứa JS -->
+    <script src="../JS/detail.js"></script>
+</body>
+</html>

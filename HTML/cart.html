@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - TTGSHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../images/LOGO TTGSHOP.png" alt="TTGSHOP Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+            </ul>
+            <div class="nav-right-actions">
+                <a href="cart.html" class="cart-icon-wrapper active">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn-login">Đăng nhập</a>
+                    <a href="register.html" class="btn-register">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="section-header" style="margin-top: 20px;">
+            <h2>🛒 GIỎ HÀNG CỦA BẠN</h2>
+        </div>
+
+        <div class="cart-container" id="cart-content-wrapper">
+            <!-- Dữ liệu giỏ hàng sẽ được render động bằng JS vào đây -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="main-container footer-copyright" style="text-align: center; padding: 20px 0;">
+            © 2026 TTGSHOP. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="../JS/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTGSHOP - Chuyên PC Gaming & Linh Kiện Máy Tính</title>
+    <!-- Liên kết tệp CSS riêng -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER & NAVBAR -->
+    <header>
+        <div class="nav-container">
+            <!-- 1. Logo TTGSHOP bên trái -->
+            <a href="index.html" class="logo">
+                <img src="../images/LOGO TTGSHOP.png" alt="TTGSHOP Logo">
+            </a>
+            
+            <!-- 2. Menu điều hướng chính ở giữa -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+            </ul>
+
+            <!-- 3. Khu vực Giỏ hàng & Nút Tài khoản bên phải -->
+            <div class="nav-right-actions">
+                <!-- Giỏ hàng -->
+                <a href="cart.html" class="cart-icon-wrapper">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                
+                <!-- Nút Đăng nhập & Đăng ký -->
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn-login">Đăng nhập</a>
+                    <a href="register.html" class="btn-register">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-container">
+        
+       <!-- KHU VỰC BANNER CHÍNH & BANNER PHỤ -->
+        <div class="banner-section">
+            <!-- Slider chính (Đã bọc thẻ a để bấm vào chuyển sang trang sản phẩm) -->
+            <div class="hero-slider">
+                <a href="products.html" class="slide-track" style="display: flex; text-decoration: none;">
+                    <div class="slide"><img src="../images/SLIDE1.jpg" alt="Slide 1"></div>
+                    <div class="slide"><img src="../images/SLIDE2.jpg" alt="Slide 2"></div>
+                    <div class="slide"><img src="../images/SLIDE3.jpg" alt="Slide 3"></div>
+                    <div class="slide"><img src="../images/SLIDE4.jpg" alt="Slide 4"></div>
+                </a>
+                <!-- Nút chuyển slide qua lại (Dùng stopPropagation để tránh bấm nút điều hướng mà lại bị nhảy trang) -->
+                <button class="slider-btn prev-btn" onclick="event.preventDefault(); moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn" onclick="event.preventDefault(); moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <!-- 3 Banner phụ phía dưới (Đã bọc thẻ a dẫn sang trang sản phẩm) -->
+            <div class="sub-banners-grid">
+                <a href="products.html" class="sub-banner-card"><img src="../images/SLIDE2.jpg" alt="Sub Banner 1"></a>
+                <a href="products.html" class="sub-banner-card"><img src="../images/SLIDE3.jpg" alt="Sub Banner 2"></a>
+                <a href="products.html" class="sub-banner-card"><img src="../images/SLIDE4.jpg" alt="Sub Banner 3"></a>
+            </div>
+        </div>
+<!-- Danh mục sản phẩm -->
+<div class="categories-grid">
+    <a href="products.html?category=laptop" class="category-card">
+        <i class="fa-solid fa-laptop"></i>
+        <h3>Laptop</h3>
+    </a>
+    <a href="products.html?category=pc-gaming" class="category-card">
+        <i class="fa-solid fa-gamepad"></i>
+        <h3>PC Gaming</h3>
+    </a>
+    <a href="products.html?category=pc-office" class="category-card">
+        <i class="fa-solid fa-desktop"></i>
+        <h3>PC Văn Phòng</h3>
+    </a>
+    <a href="products.html?category=components" class="category-card">
+        <i class="fa-solid fa-microchip"></i>
+        <h3>Linh Kiện Máy Tính</h3>
+    </a>
+</div>
+
+        <!-- Về chúng tôi -->
+        <div class="about-section">
+            <h2>Về TTG SHOP</h2>
+            <p>
+                TTG SHOP là đơn vị chuyên cung cấp các giải pháp PC GAMING, PC ĐỒ HỌA, Laptop học tập - làm việc và các sản phẩm linh kiện máy tính chính hãng với giá thành tối ưu nhất cho học sinh, sinh viên và người dùng chuyên nghiệp.
+            </p>
+        </div>
+
+        <!-- Tính năng ưu điểm -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon-box"><i class="fa-solid fa-circle-check"></i></div>
+                <h4>Linh kiện chính hãng</h4>
+                <p>100% sản phẩm có nguồn gốc rõ ràng, bảo hành chính hãng từ các thương hiệu hàng đầu như ASUS, MSI, Gigabyte, Kingston.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-box"><i class="fa-solid fa-tag"></i></div>
+                <h4>Giá tối ưu cho sinh viên</h4>
+                <p>Cam kết giá cạnh tranh nhất thị trường, nhiều chương trình ưu đãi và hỗ trợ trả góp lãi suất hấp dẫn.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-box"><i class="fa-solid fa-headset"></i></div>
+                <h4>Hỗ trợ kỹ thuật 24/7</h4>
+                <p>Đội ngũ kỹ thuật viên giàu kinh nghiệm sẵn sàng tư vấn cấu hình, hỗ trợ cài đặt phần mềm và bảo hành nhanh chóng.</p>
+            </div>
+        </div>
+
+        <!-- Danh sách sản phẩm Hot / Mới / Bán chạy -->
+        <div class="section-header">
+            <h2>🔥 SẢN PHẨM HOT</h2>
+            <a href="products.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div id="hot-section" class="product-grid"></div>
+
+        <div class="section-header">
+            <h2>✨ SẢN PHẨM MỚI</h2>
+            <a href="products.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div id="new-section" class="product-grid"></div>
+
+        <div class="section-header">
+            <h2>⚡ SẢN PHẨM BÁN CHẠY</h2>
+            <a href="products.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div id="sale-section" class="product-grid"></div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="main-container footer-grid">
+            <div class="footer-col">
+                <h3>TTGSHOP</h3>
+                <p>Chuyên cung cấp PC Gaming, Laptop, linh kiện máy tính chất lượng cao cho sinh viên và game thủ chuyên nghiệp.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fa-solid fa-location-dot"></i> TP. Hồ Chí Minh, Việt Nam</p>
+                <p><i class="fa-solid fa-phone"></i> Hotline: 0909 123 456</p>
+                <p><i class="fa-solid fa-envelope"></i> Email: contact@ttgshop.vn</p>
+            </div>
+            <div class="footer-col">
+                <h4>Chính sách cửa hàng</h4>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành 1 đổi 1</a></li>
+                    <li><a href="#">Chính sách giao hàng toàn quốc</a></li>
+                    <li><a href="#">Hướng dẫn thanh toán & trả góp</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Mạng xã hội</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            © 2026 TTGSHOP. All rights reserved. Designed for Web Assignment.
+        </div>
+    </footer>
+
+    <!-- JavaScript điều khiển Slider thủ công -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(index) {
+            if (index >= slides.length) currentSlide = 0;
+            if (index < 0) currentSlide = slides.length - 1;
+            const track = document.querySelector('.slide-track');
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function moveSlide(direction) {
+            currentSlide += direction;
+            showSlide(currentSlide);
+        }
+    </script>
+
+    <!-- Các tệp JS chức năng khác của website -->
+    <script src="../JS/index.js"></script>
+    <script src="../JS/cart.js"></script>
+</body>
+</html>

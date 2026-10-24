@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm - TTGSHOP Chuyên PC Gaming & Linh Kiện</title>
+    <!-- Liên kết tệp CSS chung -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER & NAVBAR -->
+    <header>
+        <div class="nav-container">
+            <!-- 1. Logo TTGSHOP bên trái -->
+            <a href="index.html" class="logo">
+                <img src="../images/LOGO TTGSHOP.png" alt="TTGSHOP Logo">
+            </a>
+            
+            <!-- 2. Menu điều hướng chính ở giữa -->
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html" class="active">Sản phẩm</a></li>
+            </ul>
+
+            <!-- 3. Khu vực Giỏ hàng & Nút Tài khoản bên phải -->
+            <div class="nav-right-actions">
+                <!-- Giỏ hàng -->
+                <a href="cart.html" class="cart-icon-wrapper">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                
+                <!-- Nút Đăng nhập & Đăng ký -->
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn-login">Đăng nhập</a>
+                    <a href="register.html" class="btn-register">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-container">
+        <!-- Tiêu đề trang -->
+        <div class="section-header" style="margin-top: 20px;">
+            <h2>🖥️ TẤT CẢ SẢN PHẨM</h2>
+        </div>
+
+        <!-- Thanh bộ lọc và tìm kiếm sản phẩm -->
+        <div class="filter-section">
+            <div class="filter-group">
+                <select id="category-filter" class="filter-select" onchange="filterProducts()">
+                    <option value="all">Tất cả danh mục</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="pc-gaming">PC Gaming</option>
+                    <option value="pc-office">PC Văn Phòng</option>
+                    <option value="components">Linh Kiện Máy Tính</option>
+                </select>
+                
+                <select id="sort-filter" class="filter-select" onchange="filterProducts()">
+                    <option value="default">Sắp xếp mặc định</option>
+                    <option value="under-20">Dưới 20 triệu đồng</option>
+                    <option value="20-50">Từ 20 - 50 triệu đồng </option>
+                    <option value="over-50">Trên 50 triệu đồng </option>
+                </select>
+            </div>
+
+            <div class="filter-group" style="width: 100%; max-width: 300px;">
+                <input type="text" id="search-input" class="search-input" placeholder="Tìm kiếm tên sản phẩm..." onkeyup="filterProducts()" style="width: 100%;">
+            </div>
+        </div>
+
+        <!-- Lưới hiển thị danh sách sản phẩm (Được load động từ products.js) -->
+        <div id="product-list" class="product-grid" style="margin-bottom: 50px;">
+            <!-- Dữ liệu sản phẩm sẽ được JavaScript render vào đây -->
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="main-container footer-grid">
+            <div class="footer-col">
+                <h3>TTGSHOP</h3>
+                <p>Chuyên cung cấp PC Gaming, Laptop, linh kiện máy tính chất lượng cao cho sinh viên và game thủ chuyên nghiệp.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fa-solid fa-location-dot"></i> TP. Hồ Chí Minh, Việt Nam</p>
+                <p><i class="fa-solid fa-phone"></i> Hotline: 0909 123 456</p>
+                <p><i class="fa-solid fa-envelope"></i> Email: contact@ttgshop.vn</p>
+            </div>
+            <div class="footer-col">
+                <h4>Chính sách cửa hàng</h4>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành 1 đổi 1</a></li>
+                    <li><a href="#">Chính sách giao hàng toàn quốc</a></li>
+                    <li><a href="#">Hướng dẫn thanh toán & trả góp</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Mạng xã hội</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            © 2026 TTGSHOP. All rights reserved. Designed for Web Assignment.
+        </div>
+    </footer>
+
+    <!-- Các tệp JavaScript liên kết -->
+    <script src="../JS/products.js"></script>
+    <script src="../JS/cart.js"></script>
+</body>
+</html>
